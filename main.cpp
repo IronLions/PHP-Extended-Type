@@ -1,7 +1,6 @@
 #include <phpcpp.h>
 #include <cstdlib>
 #include <iostream>
-#include "etype.cpp"
 
 extern "C" {
 PHPCPP_EXPORT void *get_module() {
@@ -9,8 +8,8 @@ PHPCPP_EXPORT void *get_module() {
 
     // List adds here. `extension.add<myFunction>("myFunction");`
     // class etype.
-    Php::Class<etype> etype("Etype");
-    etype.method<&etype::test> ("test");
+    //Php::Class<etype> etype("Etype");
+    //etype.method<&etype::test> ("test");
     extension.add(std::move(etype));
 
     // End of add declarations.
