@@ -12,3 +12,5 @@
 static
 shared
 cmake-build-*
+
+!CMakeLists.txt
