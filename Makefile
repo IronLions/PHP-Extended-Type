@@ -49,8 +49,8 @@ INSTALL_LIB			=	${INSTALL_PREFIX}/lib
 #   Otherwise only release verions changes. (version is MAJOR.MINOR.RELEASE)
 #
 
-SONAME					=	2.0
-VERSION					=	2.0.0
+SONAME					=	2.1
+VERSION					=	2.1.0
 
 
 #
@@ -223,7 +223,7 @@ install:
 		${LN} ${INSTALL_LIB}/${PHP_STATIC_LIBRARY} ${INSTALL_LIB}/libphpcpp.a; \
 	fi
 	if `which ldconfig`; then \
-		sudo ldconfig; \
+		ldconfig; \
 	fi
 
 uninstall:
