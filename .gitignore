@@ -1,7 +1,13 @@
+# IDE
+.idea
+
+# Generated Files & Files
 *.o
 *.a
 *.so
 *.txt
 *.a.*
 *.so.*
-.idea
+
+static
+shared
