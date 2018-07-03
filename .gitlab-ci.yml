@@ -1,7 +1,7 @@
 before_script: 
    - apt update && apt -y install make autoconf make git
    - docker-php-source extract
-   - git clone https://github.com/CopernicaMarketingSoftware/PHP-CPP && cd PHP-CPP && mv Makefile Makefile.OLD && sed 's|^PHP_LINKER_FLAGS.*|PHP_LINKER_FLAGS=${LINKER_FLAGS} -I/usr/src/php -I/usr/src/php/main -I/usr/src/php/Zend -I/usr/src/php/TSRM -I/usr/src/php/ext -I/usr/src/php/ext/date/lib|' Makefile.OLD > Makefile && make -j$(nproc) && make install
+   - git clone https://github.com/CopernicaMarketingSoftware/PHP-CPP && cd PHP-CPP && mv Makefile Makefile.OLD && sed 's|^PHP_LINKER_FLAGS.*|PHP_LINKER_FLAGS=${LINKER_FLAGS} -I/usr/src/php -I/usr/src/php/main -I/usr/src/php/Zend -I/usr/src/php/TSRM -I/usr/src/php/ext -I/usr/src/php/ext/date/lib|' Makefile.OLD > Makefile && make -j$(nproc) && make install && cd ..
 build:7.0:
   image: php:7.0
   stage: build
