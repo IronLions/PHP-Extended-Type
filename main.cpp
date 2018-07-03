@@ -10,7 +10,7 @@ PHPCPP_EXPORT void *get_module() {
     // class etype.
     //Php::Class<etype> etype("Etype");
     //etype.method<&etype::test> ("test");
-    extension.add(std::move(etype));
+    //extension.add(std::move(etype));
 
     // End of add declarations.
     return extension;
