@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+rm -r .deps
+rm *.lo
+rm *.la
+rm -r .libs
+rm acinclude.m4
+rm aclocal.m4
+rm -r autom4te.cache
+rm -r build
+rm config.guess
+rm config.h
+rm config.h.in
+rm config.log
+rm config.nice
+rm config.status
+rm config.sub
+rm configure
+rm configure.ac
+rm -r include
+rm install-sh
+rm libtool
+rm ltmain.sh
+rm Makefile
+rm Makefile.fragments
+rm Makefile.global
+rm Makefile.objects
+rm missing
+rm mkinstalldirs
+rm -r modules
+rm run-tests.php
+rm tests/*/*.diff
+rm tests/*/*.out
+rm tests/*/*.php
+rm tests/*/*.exp
+rm tests/*/*.log
+rm tests/*/*.sh
